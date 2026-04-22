@@ -18,7 +18,7 @@ SVG logo designer. Generates multiple logo concepts and layout variations (horiz
 ## Installation
 
 ```
-/install-skills https://github.com/jlengrand/my-skills
+/plugin marketplace add jlengrand/my-skills
 ```
 
 ## Structure
