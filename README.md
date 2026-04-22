@@ -1,39 +1,85 @@
 # julien-skills
 
-Julien's personal [Claude Code](https://claude.ai/code) skill plugin — a collection of specialized AI personas for coaching, design, and presentation work.
+<p align="center">
+  <strong>Julien's personal Claude Code skill collection — coaching, slides, and design.</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/jlengrand/my-skills"><img src="https://img.shields.io/badge/Claude_Code-Marketplace-orange?style=flat-square&logo=anthropic" alt="Claude Code Marketplace"></a>
+  <a href="https://github.com/jlengrand/my-skills/stargazers"><img src="https://img.shields.io/github/stars/jlengrand/my-skills?style=flat-square" alt="GitHub Stars"></a>
+  <img src="https://img.shields.io/github/last-commit/jlengrand/my-skills?style=flat-square" alt="Last commit">
+  <a href="https://github.com/jlengrand/my-skills/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT License"></a>
+</p>
+
+---
+
+## What are Skills?
+
+Skills are folders of instructions that AI agents load dynamically to improve performance on specialized tasks. Each skill is self-contained with a `SKILL.md` (or `skill.md`) file containing a system-prompt-style persona and workflow.
+
+For more on the standard, see [agentskills.io](https://agentskills.io).
+
+---
 
 ## Skills
 
-### `nvc-coach`
-Non-Violent Communication coach based on Marshall Rosenberg's framework. Describe a situation, paste a message to reformulate, or reflect on a past interaction.
+| Skill | Description |
+|-------|-------------|
+| [nvc-coach](./skills/nvc-coach) | Non-Violent Communication coach — reformulate messages with empathy, coach on situations, or reflect on past interactions. Based on Marshall Rosenberg's NVC framework. |
+| [impactful-slides](./skills/impactful-slides) | McKinsey-style slide coach — structured deck review using 7 principles: titles-only test, mental model assessment, bridge analysis, and priority rewrites. |
+| [logo-designer](./skills/logo-designer) | SVG logo designer — generates multiple logo concepts and layout variations (horizontal, vertical, icon-only) with color palette recommendations. |
 
-Modes: situation coaching · message reformulation · retrospective reflection · NVC concepts
-
-### `impactful-slides`
-McKinsey-style slide coach. Share a deck or slide titles to get a structured review against 7 principles: titles-only test, mental model assessment, bridge analysis, and priority rewrites.
-
-### `logo-designer`
-SVG logo designer. Generates multiple logo concepts and layout variations (horizontal, vertical, icon-only) from a description, with color palette recommendations and usage guidelines.
+---
 
 ## Installation
 
-```
+### Claude Code Plugin Marketplace
+
+```bash
+# Add this marketplace
 /plugin marketplace add jlengrand/my-skills
+
+# Install a specific skill
+/plugin install nvc-coach@julien-skills
+/plugin install impactful-slides@julien-skills
+/plugin install logo-designer@julien-skills
 ```
+
+### Universal install (npx)
+
+```bash
+# Install all skills
+npx skills add jlengrand/my-skills
+
+# Install a specific skill
+npx skills add jlengrand/my-skills --skill nvc-coach
+npx skills add jlengrand/my-skills --skill impactful-slides
+npx skills add jlengrand/my-skills --skill logo-designer
+```
+
+---
 
 ## Structure
 
 ```
 skills/
-  nvc-coach/skill.md
-  impactful-slides/skill.md
-  logo-designer/SKILL.md
+  nvc-coach/
+    .claude-plugin/plugin.json
+    skill.md
+  impactful-slides/
+    .claude-plugin/plugin.json
+    skill.md
+  logo-designer/
+    .claude-plugin/plugin.json
+    SKILL.md
 .claude-plugin/
-  plugin.json        # plugin metadata
-  README.md          # skills table (used by installer)
+  marketplace.json
+skills.json
 ```
 
-Each skill is a single markdown file with YAML frontmatter (`name`, `description`) followed by the system-prompt-style instructions.
+Each skill is a single markdown file with YAML frontmatter (`name`, `description`) followed by system-prompt-style instructions.
+
+---
 
 ## Author
 
