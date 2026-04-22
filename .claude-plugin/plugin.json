@@ -1,0 +1,11 @@
+{
+  "name": "julien-skills",
+  "description": "Julien's personal Claude Code skill collection — NVC coaching, slide review, and logo design.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Julien Lengrand-Lambert",
+    "email": "jlengrand@gmail.com",
+    "url": "https://github.com/jlengrand"
+  },
+  "repository": "https://github.com/jlengrand/my-skills"
+}
