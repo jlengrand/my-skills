@@ -5,7 +5,7 @@
     "email": "jlengrand@gmail.com"
   },
   "metadata": {
-    "description": "Julien's personal Claude Code skill collection — NVC coaching, slide review, and logo design.",
+    "description": "Julien's personal Claude Code skill collection — coaching, slides, design, product validation, and indie founder tools.",
     "version": "1.0.0"
   },
   "keywords": [
@@ -17,7 +17,13 @@
     "presentation",
     "logo",
     "design",
-    "svg"
+    "svg",
+    "startup",
+    "product",
+    "marketing",
+    "mvp",
+    "landing page",
+    "validation"
   ],
   "plugins": [
     {
@@ -71,6 +77,103 @@
         "branding",
         "design",
         "vector"
+      ],
+      "strict": true
+    },
+    {
+      "name": "validate-app-idea",
+      "source": "./skills/validate-app-idea",
+      "description": "Evaluate whether an app idea is worth building using the painkiller/vitamin/candy framework and 3 validation questions.",
+      "version": "1.0.0",
+      "homepage": "https://github.com/jlengrand/my-skills",
+      "repository": "https://github.com/jlengrand/my-skills",
+      "license": "MIT",
+      "category": "product",
+      "keywords": [
+        "validation",
+        "app idea",
+        "startup",
+        "painkiller",
+        "market research",
+        "product"
+      ],
+      "strict": true
+    },
+    {
+      "name": "slc-scope",
+      "source": "./skills/slc-scope",
+      "description": "Scope an MVP using the SLC (Simple, Lovable, Complete) framework — ship the smallest version that delivers real value in a weekend.",
+      "version": "1.0.0",
+      "homepage": "https://github.com/jlengrand/my-skills",
+      "repository": "https://github.com/jlengrand/my-skills",
+      "license": "MIT",
+      "category": "product",
+      "keywords": [
+        "mvp",
+        "scope",
+        "slc",
+        "product",
+        "startup",
+        "launch",
+        "planning"
+      ],
+      "strict": true
+    },
+    {
+      "name": "landing-page-builder",
+      "source": "./skills/landing-page-builder",
+      "description": "Build or review a high-conversion landing page for an app using the three pillars: copywriting, design, and social proof.",
+      "version": "1.0.0",
+      "homepage": "https://github.com/jlengrand/my-skills",
+      "repository": "https://github.com/jlengrand/my-skills",
+      "license": "MIT",
+      "category": "marketing",
+      "keywords": [
+        "landing page",
+        "conversion",
+        "copywriting",
+        "design",
+        "saas",
+        "marketing"
+      ],
+      "strict": true
+    },
+    {
+      "name": "app-launch-marketing",
+      "source": "./skills/app-launch-marketing",
+      "description": "Create a realistic marketing plan for an app launch — organic Reddit, Product Hunt, social content strategy, and paid ads guidance.",
+      "version": "1.0.0",
+      "homepage": "https://github.com/jlengrand/my-skills",
+      "repository": "https://github.com/jlengrand/my-skills",
+      "license": "MIT",
+      "category": "marketing",
+      "keywords": [
+        "marketing",
+        "launch",
+        "product hunt",
+        "reddit",
+        "social media",
+        "ads",
+        "startup"
+      ],
+      "strict": true
+    },
+    {
+      "name": "extract-skills-from-video",
+      "source": "./skills/extract-skills-from-video",
+      "description": "Analyze a video transcript and create Claude Code skill files from the teachable frameworks and actionable advice it contains.",
+      "version": "1.0.0",
+      "homepage": "https://github.com/jlengrand/my-skills",
+      "repository": "https://github.com/jlengrand/my-skills",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "video",
+        "transcript",
+        "skills",
+        "learning",
+        "extraction",
+        "youtube"
       ],
       "strict": true
     }

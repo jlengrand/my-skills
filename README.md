@@ -1,7 +1,7 @@
 # julien-skills
 
 <p align="center">
-  <strong>Julien's personal Claude Code skill collection — coaching, slides, and design.</strong>
+  <strong>Julien's personal Claude Code skill collection — coaching, slides, design, product validation, and indie founder tools.</strong>
 </p>
 
 <p align="center">
@@ -28,6 +28,11 @@ For more on the standard, see [agentskills.io](https://agentskills.io).
 | [nvc-coach](./skills/nvc-coach) | Non-Violent Communication coach — reformulate messages with empathy, coach on situations, or reflect on past interactions. Based on Marshall Rosenberg's NVC framework. |
 | [impactful-slides](./skills/impactful-slides) | McKinsey-style slide coach — structured deck review using 7 principles: titles-only test, mental model assessment, bridge analysis, and priority rewrites. |
 | [logo-designer](./skills/logo-designer) | SVG logo designer — generates multiple logo concepts and layout variations (horizontal, vertical, icon-only) with color palette recommendations. |
+| [validate-app-idea](./skills/validate-app-idea) | App idea validator — evaluates whether an idea is worth building using the painkiller/vitamin/candy framework and 3 market validation questions. |
+| [slc-scope](./skills/slc-scope) | MVP scoper — cuts feature scope using the SLC (Simple, Lovable, Complete) framework to ship the smallest version that delivers real value. |
+| [landing-page-builder](./skills/landing-page-builder) | Landing page coach — builds or reviews high-conversion pages using the three pillars: copywriting, design, and social proof. |
+| [app-launch-marketing](./skills/app-launch-marketing) | Launch marketing advisor — creates realistic marketing plans covering organic Reddit, Product Hunt, social content, and paid ads for solo founders. |
+| [extract-skills-from-video](./skills/extract-skills-from-video) | Skill extractor — analyzes a video transcript and creates reusable Claude Code skill files from the teachable frameworks it contains. |
 
 ---
 
@@ -43,6 +48,11 @@ For more on the standard, see [agentskills.io](https://agentskills.io).
 /plugin install nvc-coach@julien-skills
 /plugin install impactful-slides@julien-skills
 /plugin install logo-designer@julien-skills
+/plugin install validate-app-idea@julien-skills
+/plugin install slc-scope@julien-skills
+/plugin install landing-page-builder@julien-skills
+/plugin install app-launch-marketing@julien-skills
+/plugin install extract-skills-from-video@julien-skills
 ```
 
 ### Universal install (npx)
@@ -55,6 +65,11 @@ npx skills add jlengrand/my-skills
 npx skills add jlengrand/my-skills --skill nvc-coach
 npx skills add jlengrand/my-skills --skill impactful-slides
 npx skills add jlengrand/my-skills --skill logo-designer
+npx skills add jlengrand/my-skills --skill validate-app-idea
+npx skills add jlengrand/my-skills --skill slc-scope
+npx skills add jlengrand/my-skills --skill landing-page-builder
+npx skills add jlengrand/my-skills --skill app-launch-marketing
+npx skills add jlengrand/my-skills --skill extract-skills-from-video
 ```
 
 ---
@@ -72,6 +87,21 @@ skills/
   logo-designer/
     .claude-plugin/plugin.json
     SKILL.md
+  validate-app-idea/
+    .claude-plugin/plugin.json
+    skill.md
+  slc-scope/
+    .claude-plugin/plugin.json
+    skill.md
+  landing-page-builder/
+    .claude-plugin/plugin.json
+    skill.md
+  app-launch-marketing/
+    .claude-plugin/plugin.json
+    skill.md
+  extract-skills-from-video/
+    .claude-plugin/plugin.json
+    skill.md
 .claude-plugin/
   marketplace.json
 skills.json

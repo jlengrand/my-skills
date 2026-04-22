@@ -1,0 +1,24 @@
+{
+  "name": "validate-app-idea",
+  "version": "1.0.0",
+  "description": "Evaluate whether an app idea is worth building using the painkiller/vitamin/candy framework and 3 validation questions.",
+  "author": {
+    "name": "Julien Lengrand-Lambert",
+    "email": "jlengrand@gmail.com"
+  },
+  "homepage": "https://github.com/jlengrand/my-skills",
+  "repository": "https://github.com/jlengrand/my-skills",
+  "license": "MIT",
+  "keywords": [
+    "validation",
+    "app idea",
+    "startup",
+    "painkiller",
+    "market research",
+    "product"
+  ],
+  "skills": [
+    "./skill.md"
+  ],
+  "commands": []
+}

@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "name": "julien-skills",
-  "description": "Julien's personal Claude Code skill collection — NVC coaching, slide review, and logo design.",
+  "description": "Julien's personal Claude Code skill collection — coaching, slides, design, product validation, and indie founder tools.",
   "repository": "https://github.com/jlengrand/my-skills",
   "skills": [
     {
@@ -105,6 +105,176 @@
       "commands": [],
       "links": {
         "github": "https://github.com/jlengrand/my-skills/tree/main/skills/logo-designer"
+      }
+    },
+    {
+      "name": "validate-app-idea",
+      "version": "1.0.0",
+      "description": "Evaluate whether an app idea is worth building using the painkiller/vitamin/candy framework and 3 validation questions.",
+      "icon": "check-circle",
+      "color": "84CC16",
+      "triggers": [
+        "validate idea",
+        "app idea",
+        "painkiller",
+        "vitamin",
+        "candy",
+        "is this worth building",
+        "idea validation",
+        "market research"
+      ],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": null,
+        "keys": []
+      },
+      "install": {
+        "user": {
+          "claude": "npx skills add jlengrand/my-skills --skill validate-app-idea -a claude"
+        },
+        "project": {
+          "claude": "npx skills add jlengrand/my-skills --skill validate-app-idea"
+        }
+      },
+      "commands": [],
+      "links": {
+        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/validate-app-idea"
+      }
+    },
+    {
+      "name": "slc-scope",
+      "version": "1.0.0",
+      "description": "Scope an MVP using the SLC (Simple, Lovable, Complete) framework — ship the smallest version that delivers real value in a weekend.",
+      "icon": "scissors",
+      "color": "EF4444",
+      "triggers": [
+        "slc",
+        "mvp scope",
+        "scope my app",
+        "cut features",
+        "minimum viable product",
+        "weekend build",
+        "ship faster"
+      ],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": null,
+        "keys": []
+      },
+      "install": {
+        "user": {
+          "claude": "npx skills add jlengrand/my-skills --skill slc-scope -a claude"
+        },
+        "project": {
+          "claude": "npx skills add jlengrand/my-skills --skill slc-scope"
+        }
+      },
+      "commands": [],
+      "links": {
+        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/slc-scope"
+      }
+    },
+    {
+      "name": "landing-page-builder",
+      "version": "1.0.0",
+      "description": "Build or review a high-conversion landing page for an app using the three pillars: copywriting, design, and social proof.",
+      "icon": "layout",
+      "color": "06B6D4",
+      "triggers": [
+        "landing page",
+        "homepage",
+        "conversion",
+        "copywriting",
+        "review landing page",
+        "build landing page",
+        "saas homepage"
+      ],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": null,
+        "keys": []
+      },
+      "install": {
+        "user": {
+          "claude": "npx skills add jlengrand/my-skills --skill landing-page-builder -a claude"
+        },
+        "project": {
+          "claude": "npx skills add jlengrand/my-skills --skill landing-page-builder"
+        }
+      },
+      "commands": [],
+      "links": {
+        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/landing-page-builder"
+      }
+    },
+    {
+      "name": "app-launch-marketing",
+      "version": "1.0.0",
+      "description": "Create a realistic marketing plan for an app launch — organic Reddit, Product Hunt, social content strategy, and paid ads guidance.",
+      "icon": "megaphone",
+      "color": "F59E0B",
+      "triggers": [
+        "launch marketing",
+        "product hunt",
+        "reddit marketing",
+        "app launch",
+        "marketing plan",
+        "get first users",
+        "launch strategy"
+      ],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": null,
+        "keys": []
+      },
+      "install": {
+        "user": {
+          "claude": "npx skills add jlengrand/my-skills --skill app-launch-marketing -a claude"
+        },
+        "project": {
+          "claude": "npx skills add jlengrand/my-skills --skill app-launch-marketing"
+        }
+      },
+      "commands": [],
+      "links": {
+        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/app-launch-marketing"
+      }
+    },
+    {
+      "name": "extract-skills-from-video",
+      "version": "1.0.0",
+      "description": "Analyze a video transcript and create Claude Code skill files from the teachable frameworks and actionable advice it contains.",
+      "icon": "video",
+      "color": "EC4899",
+      "triggers": [
+        "extract skills",
+        "skills from video",
+        "video transcript",
+        "learn from video",
+        "skill extraction",
+        "youtube to skill"
+      ],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": null,
+        "keys": []
+      },
+      "install": {
+        "user": {
+          "claude": "npx skills add jlengrand/my-skills --skill extract-skills-from-video -a claude"
+        },
+        "project": {
+          "claude": "npx skills add jlengrand/my-skills --skill extract-skills-from-video"
+        }
+      },
+      "commands": [],
+      "links": {
+        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/extract-skills-from-video"
       }
     }
   ]

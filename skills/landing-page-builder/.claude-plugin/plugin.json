@@ -1,0 +1,24 @@
+{
+  "name": "landing-page-builder",
+  "version": "1.0.0",
+  "description": "Build or review a high-conversion landing page for an app using the three pillars: copywriting, design, and social proof.",
+  "author": {
+    "name": "Julien Lengrand-Lambert",
+    "email": "jlengrand@gmail.com"
+  },
+  "homepage": "https://github.com/jlengrand/my-skills",
+  "repository": "https://github.com/jlengrand/my-skills",
+  "license": "MIT",
+  "keywords": [
+    "landing page",
+    "conversion",
+    "copywriting",
+    "design",
+    "saas",
+    "marketing"
+  ],
+  "skills": [
+    "./skill.md"
+  ],
+  "commands": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "slc-scope",
+  "version": "1.0.0",
+  "description": "Scope an MVP using the SLC (Simple, Lovable, Complete) framework — ship the smallest version that delivers real value in a weekend.",
+  "author": {
+    "name": "Julien Lengrand-Lambert",
+    "email": "jlengrand@gmail.com"
+  },
+  "homepage": "https://github.com/jlengrand/my-skills",
+  "repository": "https://github.com/jlengrand/my-skills",
+  "license": "MIT",
+  "keywords": [
+    "mvp",
+    "scope",
+    "slc",
+    "product",
+    "startup",
+    "launch",
+    "planning"
+  ],
+  "skills": [
+    "./skill.md"
+  ],
+  "commands": []
+}
