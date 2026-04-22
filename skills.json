@@ -1,0 +1,111 @@
+{
+  "version": "1.0.0",
+  "name": "julien-skills",
+  "description": "Julien's personal Claude Code skill collection — NVC coaching, slide review, and logo design.",
+  "repository": "https://github.com/jlengrand/my-skills",
+  "skills": [
+    {
+      "name": "nvc-coach",
+      "version": "1.0.0",
+      "description": "Non-Violent Communication coach. Describe a situation, reformulate a message with empathy, or reflect on a past interaction. Based on Marshall Rosenberg's NVC framework.",
+      "icon": "heart",
+      "color": "10B981",
+      "triggers": [
+        "nvc",
+        "non-violent communication",
+        "empathy",
+        "reformulate",
+        "communicate with empathy",
+        "message review",
+        "conflict"
+      ],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": null,
+        "keys": []
+      },
+      "install": {
+        "user": {
+          "claude": "npx skills add jlengrand/my-skills --skill nvc-coach -a claude"
+        },
+        "project": {
+          "claude": "npx skills add jlengrand/my-skills --skill nvc-coach"
+        }
+      },
+      "commands": [],
+      "links": {
+        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/nvc-coach"
+      }
+    },
+    {
+      "name": "impactful-slides",
+      "version": "1.0.0",
+      "description": "McKinsey-style slide coach. Share a deck or slide titles to get a structured review: titles-only test, 7 principles, mental model assessment, bridge analysis, and priority rewrites.",
+      "icon": "presentation",
+      "color": "3B82F6",
+      "triggers": [
+        "slides",
+        "deck",
+        "presentation",
+        "slide review",
+        "mckinsey",
+        "impactful slides",
+        "slide titles"
+      ],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": null,
+        "keys": []
+      },
+      "install": {
+        "user": {
+          "claude": "npx skills add jlengrand/my-skills --skill impactful-slides -a claude"
+        },
+        "project": {
+          "claude": "npx skills add jlengrand/my-skills --skill impactful-slides"
+        }
+      },
+      "commands": [],
+      "links": {
+        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/impactful-slides"
+      }
+    },
+    {
+      "name": "logo-designer",
+      "version": "1.0.0",
+      "description": "Create professional SVG logos from descriptions and design specifications. Generates multiple logo variations with different layouts, styles, and concepts.",
+      "icon": "image",
+      "color": "8B5CF6",
+      "triggers": [
+        "logo",
+        "svg logo",
+        "brand",
+        "branding",
+        "icon",
+        "visual mark",
+        "create logo",
+        "design logo"
+      ],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": null,
+        "keys": []
+      },
+      "install": {
+        "user": {
+          "claude": "npx skills add jlengrand/my-skills --skill logo-designer -a claude"
+        },
+        "project": {
+          "claude": "npx skills add jlengrand/my-skills --skill logo-designer"
+        }
+      },
+      "commands": [],
+      "links": {
+        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/logo-designer"
+      }
+    }
+  ]
+}

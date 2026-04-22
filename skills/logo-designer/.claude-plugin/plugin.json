@@ -1,0 +1,23 @@
+{
+  "name": "logo-designer",
+  "version": "1.0.0",
+  "description": "Create professional SVG logos from descriptions and design specifications. Generates multiple logo variations with different layouts, styles, and concepts.",
+  "author": {
+    "name": "Julien Lengrand-Lambert",
+    "email": "jlengrand@gmail.com"
+  },
+  "homepage": "https://github.com/jlengrand/my-skills",
+  "repository": "https://github.com/jlengrand/my-skills",
+  "license": "MIT",
+  "keywords": [
+    "logo",
+    "svg",
+    "branding",
+    "design",
+    "vector"
+  ],
+  "skills": [
+    "./SKILL.md"
+  ],
+  "commands": []
+}

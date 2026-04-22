@@ -1,0 +1,23 @@
+{
+  "name": "impactful-slides",
+  "version": "1.0.0",
+  "description": "McKinsey-style slide coach. Share a deck or slide titles to get a structured review: titles-only test, 7 principles, mental model assessment, bridge analysis, and priority rewrites.",
+  "author": {
+    "name": "Julien Lengrand-Lambert",
+    "email": "jlengrand@gmail.com"
+  },
+  "homepage": "https://github.com/jlengrand/my-skills",
+  "repository": "https://github.com/jlengrand/my-skills",
+  "license": "MIT",
+  "keywords": [
+    "slides",
+    "presentation",
+    "mckinsey",
+    "deck",
+    "storytelling"
+  ],
+  "skills": [
+    "./skill.md"
+  ],
+  "commands": []
+}

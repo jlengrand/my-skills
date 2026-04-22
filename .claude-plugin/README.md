@@ -7,7 +7,7 @@ Julien's personal Claude Code skill collection.
 | Skill | Description |
 |-------|-------------|
 | `impactful-slides` | McKinsey-style slide coach — structured deck review using 7 principles, titles-only test, and bridge analysis |
-| `julien-logo-designer` | SVG logo designer — generates multiple logo variations from a description |
+| `logo-designer` | SVG logo designer — generates multiple logo variations from a description |
 | `nvc-coach` | Non-Violent Communication coach — reformulate messages with empathy or reflect on past interactions |
 
 ## Installation

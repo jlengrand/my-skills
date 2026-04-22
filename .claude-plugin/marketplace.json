@@ -1,0 +1,78 @@
+{
+  "name": "julien-skills",
+  "owner": {
+    "name": "Julien Lengrand-Lambert",
+    "email": "jlengrand@gmail.com"
+  },
+  "metadata": {
+    "description": "Julien's personal Claude Code skill collection — NVC coaching, slide review, and logo design.",
+    "version": "1.0.0"
+  },
+  "keywords": [
+    "skills",
+    "coaching",
+    "communication",
+    "nvc",
+    "slides",
+    "presentation",
+    "logo",
+    "design",
+    "svg"
+  ],
+  "plugins": [
+    {
+      "name": "nvc-coach",
+      "source": "./skills/nvc-coach",
+      "description": "Non-Violent Communication coach. Describe a situation, reformulate a message with empathy, or reflect on a past interaction. Based on Marshall Rosenberg's NVC framework.",
+      "version": "1.0.0",
+      "homepage": "https://github.com/jlengrand/my-skills",
+      "repository": "https://github.com/jlengrand/my-skills",
+      "license": "MIT",
+      "category": "coaching",
+      "keywords": [
+        "nvc",
+        "communication",
+        "empathy",
+        "coaching",
+        "rosenberg"
+      ],
+      "strict": true
+    },
+    {
+      "name": "impactful-slides",
+      "source": "./skills/impactful-slides",
+      "description": "McKinsey-style slide coach. Share a deck or slide titles to get a structured review: titles-only test, 7 principles, mental model assessment, bridge analysis, and priority rewrites.",
+      "version": "1.0.0",
+      "homepage": "https://github.com/jlengrand/my-skills",
+      "repository": "https://github.com/jlengrand/my-skills",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "slides",
+        "presentation",
+        "mckinsey",
+        "deck",
+        "storytelling"
+      ],
+      "strict": true
+    },
+    {
+      "name": "logo-designer",
+      "source": "./skills/logo-designer",
+      "description": "Create professional SVG logos from descriptions and design specifications. Generates multiple logo variations with different layouts, styles, and concepts.",
+      "version": "1.0.0",
+      "homepage": "https://github.com/jlengrand/my-skills",
+      "repository": "https://github.com/jlengrand/my-skills",
+      "license": "MIT",
+      "category": "design",
+      "keywords": [
+        "logo",
+        "svg",
+        "branding",
+        "design",
+        "vector"
+      ],
+      "strict": true
+    }
+  ]
+}
