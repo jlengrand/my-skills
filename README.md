@@ -12,7 +12,7 @@ Modes: situation coaching · message reformulation · retrospective reflection �
 ### `impactful-slides`
 McKinsey-style slide coach. Share a deck or slide titles to get a structured review against 7 principles: titles-only test, mental model assessment, bridge analysis, and priority rewrites.
 
-### `julien-logo-designer`
+### `logo-designer`
 SVG logo designer. Generates multiple logo concepts and layout variations (horizontal, vertical, icon-only) from a description, with color palette recommendations and usage guidelines.
 
 ## Installation
@@ -27,7 +27,7 @@ SVG logo designer. Generates multiple logo concepts and layout variations (horiz
 skills/
   nvc-coach/skill.md
   impactful-slides/skill.md
-  logo-designer-julien/SKILL.md
+  logo-designer/SKILL.md
 .claude-plugin/
   plugin.json        # plugin metadata
   README.md          # skills table (used by installer)
