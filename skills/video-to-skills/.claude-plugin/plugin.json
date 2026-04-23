@@ -1,5 +1,5 @@
 {
-  "name": "extract-skills-from-video",
+  "name": "video-to-skills",
   "version": "1.0.0",
   "description": "Analyze a video transcript and create Claude Code skill files from the teachable frameworks and actionable advice it contains.",
   "author": {

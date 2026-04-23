@@ -1,5 +1,5 @@
 ---
-name: extract-skills-from-video
+name: video-to-skills
 description: "Analyze a video transcript and create Claude Code skill files from the teachable frameworks and actionable advice it contains."
 ---
 

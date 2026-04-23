@@ -32,7 +32,7 @@ For more on the standard, see [agentskills.io](https://agentskills.io).
 | [slc-scope](./skills/slc-scope) | MVP scoper — cuts feature scope using the SLC (Simple, Lovable, Complete) framework to ship the smallest version that delivers real value. |
 | [landing-page-builder](./skills/landing-page-builder) | Landing page coach — builds or reviews high-conversion pages using the three pillars: copywriting, design, and social proof. |
 | [app-launch-marketing](./skills/app-launch-marketing) | Launch marketing advisor — creates realistic marketing plans covering organic Reddit, Product Hunt, social content, and paid ads for solo founders. |
-| [extract-skills-from-video](./skills/extract-skills-from-video) | Skill extractor — analyzes a video transcript and creates reusable Claude Code skill files from the teachable frameworks it contains. |
+| [video-to-skills](./skills/video-to-skills) | Skill extractor — analyzes a video transcript and creates reusable Claude Code skill files from the teachable frameworks it contains. |
 
 ---
 
@@ -52,7 +52,7 @@ For more on the standard, see [agentskills.io](https://agentskills.io).
 /plugin install slc-scope@julien-skills
 /plugin install landing-page-builder@julien-skills
 /plugin install app-launch-marketing@julien-skills
-/plugin install extract-skills-from-video@julien-skills
+/plugin install video-to-skills@julien-skills
 ```
 
 ### Universal install (npx)
@@ -69,7 +69,7 @@ npx skills add jlengrand/my-skills --skill validate-app-idea
 npx skills add jlengrand/my-skills --skill slc-scope
 npx skills add jlengrand/my-skills --skill landing-page-builder
 npx skills add jlengrand/my-skills --skill app-launch-marketing
-npx skills add jlengrand/my-skills --skill extract-skills-from-video
+npx skills add jlengrand/my-skills --skill video-to-skills
 ```
 
 ---
@@ -99,8 +99,7 @@ skills/
   app-launch-marketing/
     .claude-plugin/plugin.json
     skill.md
-  extract-skills-from-video/
-    .claude-plugin/plugin.json
+  video-to-skills/
     skill.md
 .claude-plugin/
   marketplace.json

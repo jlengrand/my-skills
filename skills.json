@@ -245,7 +245,7 @@
       }
     },
     {
-      "name": "extract-skills-from-video",
+      "name": "video-to-skills",
       "version": "1.0.0",
       "description": "Analyze a video transcript and create Claude Code skill files from the teachable frameworks and actionable advice it contains.",
       "icon": "video",
@@ -266,15 +266,15 @@
       },
       "install": {
         "user": {
-          "claude": "npx skills add jlengrand/my-skills --skill extract-skills-from-video -a claude"
+          "claude": "npx skills add jlengrand/my-skills --skill video-to-skills -a claude"
         },
         "project": {
-          "claude": "npx skills add jlengrand/my-skills --skill extract-skills-from-video"
+          "claude": "npx skills add jlengrand/my-skills --skill video-to-skills"
         }
       },
       "commands": [],
       "links": {
-        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/extract-skills-from-video"
+        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/video-to-skills"
       }
     }
   ]
