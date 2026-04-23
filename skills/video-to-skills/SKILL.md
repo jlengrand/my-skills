@@ -67,7 +67,7 @@ Present this list to the user before writing any files. Ask if they want all of 
 
 For each approved skill, create a file at:
 ```
-skills/<skill-name>/skill.md
+skills/<skill-name>/SKILL.md
 ```
 
 Each skill file must follow this structure:
@@ -223,8 +223,8 @@ Skill candidates found in [source] (section: [matched section or timestamp range
 ```
 Created X skills in skills/:
 
-- skills/validate-app-idea/skill.md
-- skills/landing-page-builder/skill.md
+- skills/validate-app-idea/SKILL.md
+- skills/landing-page-builder/SKILL.md
 [etc.]
 
 Each includes source attribution pointing to [source title + URL].

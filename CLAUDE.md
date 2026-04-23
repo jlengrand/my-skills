@@ -8,7 +8,7 @@ A personal collection of Claude Code skill definitions. Each skill lives in its 
 
 ## Skill File Conventions
 
-Each skill directory contains one file, named either `skill.md` or `SKILL.md`. Two frontmatter styles exist:
+Each skill directory contains one file, named `SKILL.md`. Two frontmatter styles exist:
 
 **With frontmatter** (preferred for skills meant to be installed via Claude Code's skill system):
 ```markdown
@@ -21,7 +21,7 @@ description: "One-sentence description shown in skill picker"
 ...
 ```
 
-**Without frontmatter** (`impactful-slides/skill.md`) — works as a standalone prompt, not registered via metadata.
+**Without frontmatter** (`impactful-slides/SKILL.md`) — works as a standalone prompt, not registered via metadata.
 
 ## Skill Structure Patterns
 
@@ -36,7 +36,7 @@ Skills in this repo follow a consistent internal structure:
 ## Adding a New Skill
 
 1. Create a new directory: `skill-name/`
-2. Create `skill-name/skill.md` with frontmatter `name` and `description` fields
+2. Create `skill-name/SKILL.md` with frontmatter `name` and `description` fields
 3. Follow the structure pattern above — role → framework → modes → output format → tone
 
 No build, lint, or test commands — this repo is pure markdown.

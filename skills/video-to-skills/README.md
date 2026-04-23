@@ -41,7 +41,7 @@ Invoke the skill by name in Claude Code, then describe what you want:
 https://www.youtube.com/watch?v=tLJR5OaiCw
 ```
 
-Claude fetches the auto-generated captions, identifies skill candidates, presents them for your approval, then writes each approved skill to `skills/<skill-name>/skill.md`.
+Claude fetches the auto-generated captions, identifies skill candidates, presents them for your approval, then writes each approved skill to `skills/<skill-name>/SKILL.md`.
 
 ---
 
@@ -111,7 +111,7 @@ Skills are written to:
 ```
 skills/
   <skill-name>/
-    skill.md
+    SKILL.md
 ```
 
 Each file contains a role declaration, the core framework, modes of operation, output format, and a source attribution block crediting the original creator.

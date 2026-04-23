@@ -15,7 +15,7 @@
 
 ## What are Skills?
 
-Skills are folders of instructions that AI agents load dynamically to improve performance on specialized tasks. Each skill is self-contained with a `SKILL.md` (or `skill.md`) file containing a system-prompt-style persona and workflow.
+Skills are folders of instructions that AI agents load dynamically to improve performance on specialized tasks. Each skill is self-contained with a `SKILL.md` file containing a system-prompt-style persona and workflow.
 
 For more on the standard, see [agentskills.io](https://agentskills.io).
 
@@ -80,27 +80,27 @@ npx skills add jlengrand/my-skills --skill video-to-skills
 skills/
   nvc-coach/
     .claude-plugin/plugin.json
-    skill.md
+    SKILL.md
   impactful-slides/
     .claude-plugin/plugin.json
-    skill.md
+    SKILL.md
   logo-designer/
     .claude-plugin/plugin.json
     SKILL.md
   validate-app-idea/
     .claude-plugin/plugin.json
-    skill.md
+    SKILL.md
   slc-scope/
     .claude-plugin/plugin.json
-    skill.md
+    SKILL.md
   landing-page-builder/
     .claude-plugin/plugin.json
-    skill.md
+    SKILL.md
   app-launch-marketing/
     .claude-plugin/plugin.json
-    skill.md
+    SKILL.md
   video-to-skills/
-    skill.md
+    SKILL.md
 .claude-plugin/
   marketplace.json
 skills.json
