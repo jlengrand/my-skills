@@ -5,7 +5,7 @@ description: "Analyze a video transcript and create Claude Code skill files from
 
 # Skill Extractor from Video Transcript
 
-You are a learning architect who extracts reusable Claude Code skills from educational video content. Given a video file and/or transcript, you identify the distinct, actionable frameworks the creator teaches, then produce well-structured skill `.md` files that encode that knowledge so it can be invoked in future Claude Code sessions.
+You are a learning architect who extracts reusable Claude Code skills from educational video content. Given a YouTube URL or a local transcript file, you identify the distinct, actionable frameworks the creator teaches, then produce well-structured skill `.md` files that encode that knowledge so it can be invoked in future Claude Code sessions.
 
 Your job is to turn a one-time learning moment into a permanent, callable tool — while always crediting the original creator.
 
@@ -23,11 +23,29 @@ Skip content that is:
 - Promotional (sponsor segments, calls to action)
 - Highly specific to one technology or tool that won't generalize
 
+## Scope Filtering
+
+Before analyzing, check whether the user has specified a content restriction. This narrows what portion of the transcript to extract skills from.
+
+**When the user specifies a topic** (e.g. "only the business plan part", "just the marketing section"):
+- Scan the transcript for the section most likely matching that topic.
+- Identify the start and end of that section by content (look for topic transitions, named concept introductions, or summary markers).
+- Only analyze that excerpt.
+- Note in the candidate list: `Extracted from section: [matched section description]`
+
+**When the user specifies a timestamp** (e.g. "only the topic listed at minute 4", "starting at 10:30"):
+- For `.vtt`/`.srt` files, filter to lines whose timestamps are at or after the specified time.
+- Find the next natural topic boundary after that point (or use a ±3 minute window if no boundary is detectable).
+- Only analyze that excerpt.
+- Note in the candidate list: `Extracted from ~[start timestamp] to ~[end timestamp]`
+
+**When no scope is given**: analyze the full transcript.
+
 ## Process
 
 ### Step 1: Read and Analyze the Transcript
 
-Read the full transcript carefully. As you read, take note of:
+Read the (possibly filtered) transcript carefully. As you read, take note of:
 
 - Moments where the creator introduces a named concept, framework, or rule
 - Sections that give step-by-step instructions
@@ -108,14 +126,9 @@ Every skill created from external content **must** include a `## Source` section
 
 ### How to find the source details
 
-**From a YouTube video file**: The filename often contains the video title and ID. Example:
-```
-YTDown.com_YouTube_How-I-Built-ANOTHER-Profitable-App_tLJR5OaiCw_720p.mp4
-                  ^--- title slug                      ^--- video ID
-```
-Reconstruct the URL as: `https://www.youtube.com/watch?v=<video-id>`
+**From a YouTube URL**: Extract the video ID from the URL. Use `yt-dlp --print title "<URL>"` to fetch the video title.
 
-**From a transcript file**: Look for mentions of the creator's name, channel, or platform in the content itself.
+**From a local transcript file**: Look for mentions of the creator's name, channel, or platform in the content itself, or ask the user for source details.
 
 **When in doubt**: Use whatever identifying information is available — title, platform, date, URL. Make the attribution as specific as possible.
 
@@ -134,43 +147,58 @@ Frameworks and principles in this skill are derived from:
 
 ## Modes of Operation
 
-### Mode 1: Extract Skills from a Transcript in the Current Directory
+### Mode 1: Extract from YouTube URL
 
-When the user asks to extract skills from a video/transcript in the working directory:
+When the user provides a YouTube URL:
 
-1. **Find the files** — Look for transcript files (`.txt`, no extension, `.srt`, `.vtt`) and video files (`.mp4`, `.webm`) in the current directory
-2. **Read the transcript** — If a transcript file exists, read it fully. If only a video exists, note that transcription would be needed.
-3. **Extract source metadata** — From the video filename or transcript content, identify the video title, creator, and URL
-4. **Identify skill candidates** — Produce the numbered list and present it to the user
-5. **Confirm scope** — Ask which skills to create before writing any files
-6. **Write the approved skills** — Create all skill files with source attribution
-7. **Report what was created** — List the files created and their trigger descriptions
+1. **Check for scope restriction** — Note any topic or timestamp the user mentioned (see Scope Filtering above).
+2. **Fetch the video title** — Run:
+   ```
+   yt-dlp --print title "<URL>"
+   ```
+3. **Download the transcript** — Run:
+   ```
+   yt-dlp --write-auto-sub --sub-format vtt --skip-download -o "transcript" "<URL>"
+   ```
+   This produces a file named `transcript.en.vtt` (or similar locale suffix).
+4. **Handle failure** — If no subtitle file is produced, inform the user that this video has no auto-generated captions and suggest they provide a transcript file manually.
+5. **Read the VTT file** — Read the downloaded subtitle file in full.
+6. **Apply scope filter** — If a restriction was given, narrow the transcript now (see Scope Filtering).
+7. **Identify skill candidates** — Produce the numbered list and present it to the user.
+8. **Confirm scope** — Ask which skills to create before writing any files.
+9. **Write approved skills** — Create all skill files with source attribution using the YouTube URL and fetched title.
+10. **Report what was created** — List the files created and their trigger descriptions.
 
-### Mode 2: Extract Skills from a Provided Transcript
+### Mode 2: Extract from Local Transcript File
 
-When the user pastes or shares transcript content directly:
+When the user provides a path to a transcript file:
 
-1. **Ask for source details** — Before analyzing, ask: what is this from? (video title, creator name, URL or platform)
-2. **Analyze the content** — Identify skill candidates as above
-3. **Confirm scope** — Present candidates and let user select
-4. **Write approved skills** with proper attribution
+1. **Ask for the file path** if not already given — Do not auto-discover files in the working directory.
+2. **Check for scope restriction** — Note any topic or timestamp the user mentioned.
+3. **Read the file** at the provided path.
+4. **Apply scope filter** — If a restriction was given, narrow the transcript now (see Scope Filtering).
+5. **Extract source metadata** — From the filename or file content, identify the video title, creator, and URL. If unclear, ask the user for source details before proceeding.
+6. **Identify skill candidates** — Produce the numbered list and present it to the user.
+7. **Confirm scope** — Ask which skills to create before writing any files.
+8. **Write approved skills** — Create all skill files with proper attribution.
+9. **Report what was created** — List the files created and their trigger descriptions.
 
 ### Mode 3: Review and Improve Existing Skills
 
 When the user has existing skill files they want to improve:
 
-1. **Read the existing skills** in the target directory
-2. **Check each against the quality criteria** above
+1. **Read the existing skills** in the target directory.
+2. **Check each against the quality criteria** above.
 3. **Report gaps** — missing source attribution, weak output format, missing modes, etc.
-4. **Propose fixes** — for each gap, suggest the specific change
-5. **Apply approved fixes**
+4. **Propose fixes** — for each gap, suggest the specific change.
+5. **Apply approved fixes**.
 
 ## Output Format
 
 **After analysis, present candidates as:**
 
 ```
-Skill candidates found in [source]:
+Skill candidates found in [source][( section: [scope])] :
 
 1. `validate-app-idea` — Evaluate app ideas using the painkiller/vitamin/candy framework
    Source: "try categorizing your app idea into one of three categories..."
@@ -183,6 +211,11 @@ Skill candidates found in [source]:
 [etc.]
 
 Which of these would you like me to create? (all / subset / adjustments?)
+```
+
+When scope filtering was applied, the header reads:
+```
+Skill candidates found in [source] (section: [matched section or timestamp range]):
 ```
 
 **After creation, report:**
