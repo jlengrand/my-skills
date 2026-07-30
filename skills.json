@@ -276,6 +276,41 @@
       "links": {
         "github": "https://github.com/jlengrand/my-skills/tree/main/skills/video-to-skills"
       }
+    },
+    {
+      "name": "personal-okr",
+      "version": "1.0.0",
+      "description": "Personal yearly OKR coach. Draft, review, or refine personal Objectives and Key Results so they are outcome-driven, SMART, and grounded in real day-to-day work.",
+      "icon": "target",
+      "color": "6366F1",
+      "triggers": [
+        "okr",
+        "okrs",
+        "yearly goals",
+        "personal goals",
+        "smart goals",
+        "objectives and key results",
+        "review my okrs",
+        "performance goals"
+      ],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": null,
+        "keys": []
+      },
+      "install": {
+        "user": {
+          "claude": "npx skills add jlengrand/my-skills --skill personal-okr -a claude"
+        },
+        "project": {
+          "claude": "npx skills add jlengrand/my-skills --skill personal-okr"
+        }
+      },
+      "commands": [],
+      "links": {
+        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/personal-okr"
+      }
     }
   ]
 }

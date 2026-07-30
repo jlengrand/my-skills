@@ -33,6 +33,7 @@ For more on the standard, see [agentskills.io](https://agentskills.io).
 | [landing-page-builder](./skills/landing-page-builder) | Landing page coach — builds or reviews high-conversion pages using the three pillars: copywriting, design, and social proof. |
 | [app-launch-marketing](./skills/app-launch-marketing) | Launch marketing advisor — creates realistic marketing plans covering organic Reddit, Product Hunt, social content, and paid ads for solo founders. |
 | [video-to-skills](./skills/video-to-skills) | Skill extractor — analyzes a video transcript and creates reusable Claude Code skill files from the teachable frameworks it contains. |
+| [personal-okr](./skills/personal-okr) | Personal OKR coach — drafts and reviews yearly Objectives and Key Results so they're outcome-driven, SMART, and grounded in real day-to-day work. |
 
 ---
 
@@ -53,6 +54,7 @@ For more on the standard, see [agentskills.io](https://agentskills.io).
 /plugin install landing-page-builder@julien-skills
 /plugin install app-launch-marketing@julien-skills
 /plugin install video-to-skills@julien-skills
+/plugin install personal-okr@julien-skills
 ```
 
 ### Universal install (npx)
@@ -70,6 +72,7 @@ npx skills add jlengrand/my-skills --skill slc-scope
 npx skills add jlengrand/my-skills --skill landing-page-builder
 npx skills add jlengrand/my-skills --skill app-launch-marketing
 npx skills add jlengrand/my-skills --skill video-to-skills
+npx skills add jlengrand/my-skills --skill personal-okr
 ```
 
 ---
@@ -100,6 +103,9 @@ skills/
     .claude-plugin/plugin.json
     SKILL.md
   video-to-skills/
+    SKILL.md
+  personal-okr/
+    .claude-plugin/plugin.json
     SKILL.md
 .claude-plugin/
   marketplace.json

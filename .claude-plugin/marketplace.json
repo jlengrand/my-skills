@@ -176,6 +176,25 @@
         "youtube"
       ],
       "strict": true
+    },
+    {
+      "name": "personal-okr",
+      "source": "./skills/personal-okr",
+      "description": "Personal yearly OKR coach. Draft, review, or refine personal Objectives and Key Results so they are outcome-driven, SMART, and grounded in real day-to-day work.",
+      "version": "1.0.0",
+      "homepage": "https://github.com/jlengrand/my-skills",
+      "repository": "https://github.com/jlengrand/my-skills",
+      "license": "MIT",
+      "category": "management",
+      "keywords": [
+        "okr",
+        "goals",
+        "smart goals",
+        "management",
+        "performance review",
+        "outcomes"
+      ],
+      "strict": true
     }
   ]
 }
