@@ -1,0 +1,24 @@
+{
+  "name": "personal-okr",
+  "version": "1.0.0",
+  "description": "Personal yearly OKR coach. Draft, review, or refine personal Objectives and Key Results so they are outcome-driven, SMART, and grounded in real day-to-day work.",
+  "author": {
+    "name": "Julien Lengrand-Lambert",
+    "email": "jlengrand@gmail.com"
+  },
+  "homepage": "https://github.com/jlengrand/my-skills",
+  "repository": "https://github.com/jlengrand/my-skills",
+  "license": "MIT",
+  "keywords": [
+    "okr",
+    "goals",
+    "smart goals",
+    "management",
+    "performance review",
+    "outcomes"
+  ],
+  "skills": [
+    "./SKILL.md"
+  ],
+  "commands": []
+}
