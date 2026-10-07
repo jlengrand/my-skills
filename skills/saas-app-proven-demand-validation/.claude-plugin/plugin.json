@@ -1,7 +1,7 @@
 {
-  "name": "saas-slc-scope",
+  "name": "saas-app-proven-demand-validation",
   "version": "1.0.0",
-  "description": "Scope an MVP using the SLC (Simple, Lovable, Complete) framework — ship the smallest version that delivers real value in a weekend.",
+  "description": "Evaluate SaaS app ideas using proven demand criteria — avoid platform risk, chase boring businesses, and validate established markets.",
   "author": {
     "name": "Julien Lengrand-Lambert",
     "email": "jlengrand@gmail.com"
@@ -10,13 +10,11 @@
   "repository": "https://github.com/jlengrand/my-skills",
   "license": "MIT",
   "keywords": [
-    "mvp",
-    "scope",
-    "slc",
-    "product",
-    "startup",
-    "launch",
-    "planning"
+    "validation",
+    "saas",
+    "proven demand",
+    "platform risk",
+    "startup"
   ],
   "skills": [
     "./SKILL.md"

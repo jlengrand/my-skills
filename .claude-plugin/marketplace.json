@@ -81,8 +81,8 @@
       "strict": true
     },
     {
-      "name": "validate-app-idea",
-      "source": "./skills/validate-app-idea",
+      "name": "saas-app-painkiller-validation",
+      "source": "./skills/saas-app-painkiller-validation",
       "description": "Evaluate whether an app idea is worth building using the painkiller/vitamin/candy framework and 3 validation questions.",
       "version": "1.0.0",
       "homepage": "https://github.com/jlengrand/my-skills",
@@ -100,8 +100,8 @@
       "strict": true
     },
     {
-      "name": "slc-scope",
-      "source": "./skills/slc-scope",
+      "name": "saas-slc-scope",
+      "source": "./skills/saas-slc-scope",
       "description": "Scope an MVP using the SLC (Simple, Lovable, Complete) framework — ship the smallest version that delivers real value in a weekend.",
       "version": "1.0.0",
       "homepage": "https://github.com/jlengrand/my-skills",
@@ -120,8 +120,8 @@
       "strict": true
     },
     {
-      "name": "landing-page-builder",
-      "source": "./skills/landing-page-builder",
+      "name": "saas-landing-page-builder",
+      "source": "./skills/saas-landing-page-builder",
       "description": "Build or review a high-conversion landing page for an app using the three pillars: copywriting, design, and social proof.",
       "version": "1.0.0",
       "homepage": "https://github.com/jlengrand/my-skills",
@@ -139,8 +139,8 @@
       "strict": true
     },
     {
-      "name": "app-launch-marketing",
-      "source": "./skills/app-launch-marketing",
+      "name": "saas-app-launch-marketing",
+      "source": "./skills/saas-app-launch-marketing",
       "description": "Create a realistic marketing plan for an app launch — organic Reddit, Product Hunt, social content strategy, and paid ads guidance.",
       "version": "1.0.0",
       "homepage": "https://github.com/jlengrand/my-skills",
@@ -155,6 +155,43 @@
         "social media",
         "ads",
         "startup"
+      ],
+      "strict": true
+    },
+    {
+      "name": "saas-app-proven-demand-validation",
+      "source": "./skills/saas-app-proven-demand-validation",
+      "description": "Evaluate SaaS app ideas using proven demand criteria — avoid platform risk, chase boring businesses, and validate established markets.",
+      "version": "1.0.0",
+      "homepage": "https://github.com/jlengrand/my-skills",
+      "repository": "https://github.com/jlengrand/my-skills",
+      "license": "MIT",
+      "category": "product",
+      "keywords": [
+        "validation",
+        "saas",
+        "proven demand",
+        "platform risk",
+        "startup"
+      ],
+      "strict": true
+    },
+    {
+      "name": "saas-launch-playbook",
+      "source": "./skills/saas-launch-playbook",
+      "description": "Execute a 10-step playbook for launching SaaS apps to $200K MRR (from Mike on Starter Story) — idea validation, LTD strategy, content marketing, and MRR stabilization.",
+      "version": "1.0.0",
+      "homepage": "https://github.com/jlengrand/my-skills",
+      "repository": "https://github.com/jlengrand/my-skills",
+      "license": "MIT",
+      "category": "marketing",
+      "keywords": [
+        "saas",
+        "launch",
+        "ltd",
+        "appsumo",
+        "mrr",
+        "playbook"
       ],
       "strict": true
     },

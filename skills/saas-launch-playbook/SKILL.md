@@ -1,6 +1,6 @@
 ---
 name: saas-launch-playbook
-description: "Execute Mike's 10-step playbook for launching SaaS apps to $200K MRR — from idea validation through LTD strategy, content marketing, and MRR stabilization."
+description: "Execute a 10-step playbook for launching SaaS apps to $200K MRR (from Mike on Starter Story) — idea validation, LTD strategy, content marketing, and MRR stabilization."
 ---
 
 # SaaS Launch Playbook

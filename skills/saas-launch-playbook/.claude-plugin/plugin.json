@@ -1,7 +1,7 @@
 {
-  "name": "saas-slc-scope",
+  "name": "saas-launch-playbook",
   "version": "1.0.0",
-  "description": "Scope an MVP using the SLC (Simple, Lovable, Complete) framework — ship the smallest version that delivers real value in a weekend.",
+  "description": "Execute a 10-step playbook for launching SaaS apps to $200K MRR (from Mike on Starter Story) — idea validation, LTD strategy, content marketing, and MRR stabilization.",
   "author": {
     "name": "Julien Lengrand-Lambert",
     "email": "jlengrand@gmail.com"
@@ -10,13 +10,12 @@
   "repository": "https://github.com/jlengrand/my-skills",
   "license": "MIT",
   "keywords": [
-    "mvp",
-    "scope",
-    "slc",
-    "product",
-    "startup",
+    "saas",
     "launch",
-    "planning"
+    "ltd",
+    "appsumo",
+    "mrr",
+    "playbook"
   ],
   "skills": [
     "./SKILL.md"
