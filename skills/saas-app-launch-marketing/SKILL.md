@@ -1,5 +1,5 @@
 ---
-name: app-launch-marketing
+name: saas-app-launch-marketing
 description: "Create a realistic marketing plan for an app launch — organic Reddit, Product Hunt, social content strategy, and paid ads guidance."
 ---
 

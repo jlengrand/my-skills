@@ -1,5 +1,5 @@
 ---
-name: validate-app-idea
+name: saas-validate-app-idea
 description: "Evaluate whether an app idea is worth building using the painkiller/vitamin/candy framework and 3 validation questions."
 ---
 
