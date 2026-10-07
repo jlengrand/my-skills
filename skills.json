@@ -108,7 +108,7 @@
       }
     },
     {
-      "name": "validate-app-idea",
+      "name": "saas-app-painkiller-validation",
       "version": "1.0.0",
       "description": "Evaluate whether an app idea is worth building using the painkiller/vitamin/candy framework and 3 validation questions.",
       "icon": "check-circle",
@@ -131,19 +131,19 @@
       },
       "install": {
         "user": {
-          "claude": "npx skills add jlengrand/my-skills --skill validate-app-idea -a claude"
+          "claude": "npx skills add jlengrand/my-skills --skill saas-app-painkiller-validation -a claude"
         },
         "project": {
-          "claude": "npx skills add jlengrand/my-skills --skill validate-app-idea"
+          "claude": "npx skills add jlengrand/my-skills --skill saas-app-painkiller-validation"
         }
       },
       "commands": [],
       "links": {
-        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/validate-app-idea"
+        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/saas-app-painkiller-validation"
       }
     },
     {
-      "name": "slc-scope",
+      "name": "saas-slc-scope",
       "version": "1.0.0",
       "description": "Scope an MVP using the SLC (Simple, Lovable, Complete) framework — ship the smallest version that delivers real value in a weekend.",
       "icon": "scissors",
@@ -165,19 +165,19 @@
       },
       "install": {
         "user": {
-          "claude": "npx skills add jlengrand/my-skills --skill slc-scope -a claude"
+          "claude": "npx skills add jlengrand/my-skills --skill saas-slc-scope -a claude"
         },
         "project": {
-          "claude": "npx skills add jlengrand/my-skills --skill slc-scope"
+          "claude": "npx skills add jlengrand/my-skills --skill saas-slc-scope"
         }
       },
       "commands": [],
       "links": {
-        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/slc-scope"
+        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/saas-slc-scope"
       }
     },
     {
-      "name": "landing-page-builder",
+      "name": "saas-landing-page-builder",
       "version": "1.0.0",
       "description": "Build or review a high-conversion landing page for an app using the three pillars: copywriting, design, and social proof.",
       "icon": "layout",
@@ -199,19 +199,19 @@
       },
       "install": {
         "user": {
-          "claude": "npx skills add jlengrand/my-skills --skill landing-page-builder -a claude"
+          "claude": "npx skills add jlengrand/my-skills --skill saas-landing-page-builder -a claude"
         },
         "project": {
-          "claude": "npx skills add jlengrand/my-skills --skill landing-page-builder"
+          "claude": "npx skills add jlengrand/my-skills --skill saas-landing-page-builder"
         }
       },
       "commands": [],
       "links": {
-        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/landing-page-builder"
+        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/saas-landing-page-builder"
       }
     },
     {
-      "name": "app-launch-marketing",
+      "name": "saas-app-launch-marketing",
       "version": "1.0.0",
       "description": "Create a realistic marketing plan for an app launch — organic Reddit, Product Hunt, social content strategy, and paid ads guidance.",
       "icon": "megaphone",
@@ -233,15 +233,82 @@
       },
       "install": {
         "user": {
-          "claude": "npx skills add jlengrand/my-skills --skill app-launch-marketing -a claude"
+          "claude": "npx skills add jlengrand/my-skills --skill saas-app-launch-marketing -a claude"
         },
         "project": {
-          "claude": "npx skills add jlengrand/my-skills --skill app-launch-marketing"
+          "claude": "npx skills add jlengrand/my-skills --skill saas-app-launch-marketing"
         }
       },
       "commands": [],
       "links": {
-        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/app-launch-marketing"
+        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/saas-app-launch-marketing"
+      }
+    },
+    {
+      "name": "saas-app-proven-demand-validation",
+      "version": "1.0.0",
+      "description": "Evaluate SaaS app ideas using proven demand criteria — avoid platform risk, chase boring businesses, and validate established markets.",
+      "icon": "check-circle",
+      "color": "22C55E",
+      "triggers": [
+        "proven demand",
+        "saas idea",
+        "platform risk",
+        "boring business",
+        "validate saas idea",
+        "compare ideas"
+      ],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": null,
+        "keys": []
+      },
+      "install": {
+        "user": {
+          "claude": "npx skills add jlengrand/my-skills --skill saas-app-proven-demand-validation -a claude"
+        },
+        "project": {
+          "claude": "npx skills add jlengrand/my-skills --skill saas-app-proven-demand-validation"
+        }
+      },
+      "commands": [],
+      "links": {
+        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/saas-app-proven-demand-validation"
+      }
+    },
+    {
+      "name": "saas-launch-playbook",
+      "version": "1.0.0",
+      "description": "Execute a 10-step playbook for launching SaaS apps to $200K MRR (from Mike on Starter Story) — idea validation, LTD strategy, content marketing, and MRR stabilization.",
+      "icon": "rocket",
+      "color": "F97316",
+      "triggers": [
+        "saas launch",
+        "launch playbook",
+        "lifetime deal",
+        "ltd",
+        "appsumo",
+        "200k mrr",
+        "saas playbook"
+      ],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": null,
+        "keys": []
+      },
+      "install": {
+        "user": {
+          "claude": "npx skills add jlengrand/my-skills --skill saas-launch-playbook -a claude"
+        },
+        "project": {
+          "claude": "npx skills add jlengrand/my-skills --skill saas-launch-playbook"
+        }
+      },
+      "commands": [],
+      "links": {
+        "github": "https://github.com/jlengrand/my-skills/tree/main/skills/saas-launch-playbook"
       }
     },
     {

@@ -1,0 +1,23 @@
+{
+  "name": "saas-app-proven-demand-validation",
+  "version": "1.0.0",
+  "description": "Evaluate SaaS app ideas using proven demand criteria — avoid platform risk, chase boring businesses, and validate established markets.",
+  "author": {
+    "name": "Julien Lengrand-Lambert",
+    "email": "jlengrand@gmail.com"
+  },
+  "homepage": "https://github.com/jlengrand/my-skills",
+  "repository": "https://github.com/jlengrand/my-skills",
+  "license": "MIT",
+  "keywords": [
+    "validation",
+    "saas",
+    "proven demand",
+    "platform risk",
+    "startup"
+  ],
+  "skills": [
+    "./SKILL.md"
+  ],
+  "commands": []
+}

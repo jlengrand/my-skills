@@ -1,7 +1,7 @@
 {
-  "name": "slc-scope",
+  "name": "saas-landing-page-builder",
   "version": "1.0.0",
-  "description": "Scope an MVP using the SLC (Simple, Lovable, Complete) framework — ship the smallest version that delivers real value in a weekend.",
+  "description": "Build or review a high-conversion landing page for an app using the three pillars: copywriting, design, and social proof.",
   "author": {
     "name": "Julien Lengrand-Lambert",
     "email": "jlengrand@gmail.com"
@@ -10,13 +10,12 @@
   "repository": "https://github.com/jlengrand/my-skills",
   "license": "MIT",
   "keywords": [
-    "mvp",
-    "scope",
-    "slc",
-    "product",
-    "startup",
-    "launch",
-    "planning"
+    "landing page",
+    "conversion",
+    "copywriting",
+    "design",
+    "saas",
+    "marketing"
   ],
   "skills": [
     "./SKILL.md"

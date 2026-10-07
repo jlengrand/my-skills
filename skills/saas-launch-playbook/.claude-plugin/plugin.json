@@ -1,0 +1,24 @@
+{
+  "name": "saas-launch-playbook",
+  "version": "1.0.0",
+  "description": "Execute a 10-step playbook for launching SaaS apps to $200K MRR (from Mike on Starter Story) — idea validation, LTD strategy, content marketing, and MRR stabilization.",
+  "author": {
+    "name": "Julien Lengrand-Lambert",
+    "email": "jlengrand@gmail.com"
+  },
+  "homepage": "https://github.com/jlengrand/my-skills",
+  "repository": "https://github.com/jlengrand/my-skills",
+  "license": "MIT",
+  "keywords": [
+    "saas",
+    "launch",
+    "ltd",
+    "appsumo",
+    "mrr",
+    "playbook"
+  ],
+  "skills": [
+    "./SKILL.md"
+  ],
+  "commands": []
+}

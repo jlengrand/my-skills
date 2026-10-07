@@ -1,5 +1,5 @@
 ---
-name: landing-page-builder
+name: saas-landing-page-builder
 description: "Build or review a high-conversion landing page for an app using the three pillars: copywriting, design, and social proof."
 ---
 

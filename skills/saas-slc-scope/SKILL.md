@@ -1,5 +1,5 @@
 ---
-name: slc-scope
+name: saas-slc-scope
 description: "Scope an MVP using the SLC (Simple, Lovable, Complete) framework — ship the smallest version that delivers real value in a weekend."
 ---
 
