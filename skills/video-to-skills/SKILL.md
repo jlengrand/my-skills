@@ -118,6 +118,7 @@ After writing, check each skill against these criteria:
 - [ ] At least 2 named modes of operation
 - [ ] Output format section tells Claude exactly what shape the response should take
 - [ ] Source section is present and complete
+- [ ] **Source URL is the exact URL provided by the user — verify it matches**
 - [ ] The skill would be useful to someone who hasn't watched the video
 
 ## Source Attribution
@@ -126,11 +127,11 @@ Every skill created from external content **must** include a `## Source` section
 
 ### How to find the source details
 
-**From a YouTube URL**: Extract the video ID from the URL. Use `yt-dlp --print title "<URL>"` to fetch the video title.
+**From a YouTube URL**: You MUST use the **exact URL provided by the user** — do not modify or shorten it. Verify the URL works by checking it returns a 200 status. Extract the video ID from the URL. Use `yt-dlp --print title "<URL>"` to fetch the video title.
 
-**From a local transcript file**: Look for mentions of the creator's name, channel, or platform in the content itself, or ask the user for source details.
+**From a local transcript file**: Look for mentions of the creator's name, channel, or platform in the content itself, or ask the user for source details. **Always confirm the source URL with the user if not explicitly provided.**
 
-**When in doubt**: Use whatever identifying information is available — title, platform, date, URL. Make the attribution as specific as possible.
+**When in doubt**: Ask the user for the exact source URL. Never guess or invent URLs. Make the attribution as specific as possible.
 
 ### Source block format
 
@@ -140,10 +141,12 @@ Every skill created from external content **must** include a `## Source` section
 Frameworks and principles in this skill are derived from:
 
 **"[Video Title]"** — [Platform], [Year if known]
-[URL]
+[FULL ORIGINAL URL PROVIDED BY USER]
 
 [One sentence noting which specific concepts came from this video.] Credit goes to the original creator.
 ```
+
+**Important**: The URL in the source block MUST be the exact URL provided by the user. Do not use shortened URLs, modified URLs, or reconstructed URLs.
 
 ## Modes of Operation
 
@@ -151,23 +154,25 @@ Frameworks and principles in this skill are derived from:
 
 When the user provides a YouTube URL:
 
-1. **Check for scope restriction** — Note any topic or timestamp the user mentioned (see Scope Filtering above).
-2. **Fetch the video title** — Run:
+1. **Store the original URL** — Save the exact URL provided by the user in a variable. This is the ONLY URL that will be used in source attribution.
+2. **Verify the URL** — Check that the URL is valid and accessible (returns HTTP 200). If not, inform the user and stop.
+3. **Check for scope restriction** — Note any topic or timestamp the user mentioned (see Scope Filtering above).
+4. **Fetch the video title** — Run:
    ```
-   yt-dlp --print title "<URL>"
+   yt-dlp --print title "<STORED ORIGINAL URL>"
    ```
-3. **Download the transcript** — Run:
+5. **Download the transcript** — Run:
    ```
-   yt-dlp --write-auto-sub --sub-format vtt --skip-download -o "transcript" "<URL>"
+   yt-dlp --write-auto-sub --sub-format vtt --skip-download -o "transcript" "<STORED ORIGINAL URL>"
    ```
    This produces a file named `transcript.en.vtt` (or similar locale suffix).
-4. **Handle failure** — If no subtitle file is produced, inform the user that this video has no auto-generated captions and suggest they provide a transcript file manually.
-5. **Read the VTT file** — Read the downloaded subtitle file in full.
-6. **Apply scope filter** — If a restriction was given, narrow the transcript now (see Scope Filtering).
-7. **Identify skill candidates** — Produce the numbered list and present it to the user.
-8. **Confirm scope** — Ask which skills to create before writing any files.
-9. **Write approved skills** — Create all skill files with source attribution using the YouTube URL and fetched title.
-10. **Report what was created** — List the files created and their trigger descriptions.
+6. **Handle failure** — If no subtitle file is produced, inform the user that this video has no auto-generated captions and suggest they provide a transcript file manually.
+7. **Read the VTT file** — Read the downloaded subtitle file in full.
+8. **Apply scope filter** — If a restriction was given, narrow the transcript now (see Scope Filtering).
+9. **Identify skill candidates** — Produce the numbered list and present it to the user.
+10. **Confirm scope** — Ask which skills to create before writing any files.
+11. **Write approved skills** — Create all skill files with source attribution using the **STORED ORIGINAL URL** and fetched title. Never use a different URL.
+12. **Report what was created** — List the files created and their trigger descriptions.
 
 ### Mode 2: Extract from Local Transcript File
 
@@ -177,11 +182,12 @@ When the user provides a path to a transcript file:
 2. **Check for scope restriction** — Note any topic or timestamp the user mentioned.
 3. **Read the file** at the provided path.
 4. **Apply scope filter** — If a restriction was given, narrow the transcript now (see Scope Filtering).
-5. **Extract source metadata** — From the filename or file content, identify the video title, creator, and URL. If unclear, ask the user for source details before proceeding.
-6. **Identify skill candidates** — Produce the numbered list and present it to the user.
-7. **Confirm scope** — Ask which skills to create before writing any files.
-8. **Write approved skills** — Create all skill files with proper attribution.
-9. **Report what was created** — List the files created and their trigger descriptions.
+5. **Extract source metadata** — From the filename or file content, identify the video title and creator. **If the source URL is unclear, ask the user to provide the exact original URL before proceeding.**
+6. **Verify the URL** — If a URL was extracted or provided, verify it returns HTTP 200. If not, ask the user for the correct URL.
+7. **Identify skill candidates** — Produce the numbered list and present it to the user.
+8. **Confirm scope** — Ask which skills to create before writing any files.
+9. **Write approved skills** — Create all skill files with proper attribution using the **user-confirmed or verified URL**.
+10. **Report what was created** — List the files created and their trigger descriptions.
 
 ### Mode 3: Review and Improve Existing Skills
 
@@ -237,6 +243,7 @@ Each includes source attribution pointing to [source title + URL].
 - Don't pad skill content with generic advice the video didn't contain — stay faithful to the source
 - Keep skill files focused: one framework, one purpose, clear inputs and outputs
 - Treat source attribution as a professional obligation, not an optional extra
+- **Never invent or modify source URLs — always use the exact URL provided by the user**
 
 ## Source
 
