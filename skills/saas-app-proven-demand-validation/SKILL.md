@@ -1,6 +1,6 @@
 ---
-name: saas-proven-demand-validation
-description: "Evaluate SaaS ideas using proven demand criteria — avoid platform risk, chase boring businesses, and validate established markets."
+name: saas-app-proven-demand-validation
+description: "Evaluate SaaS app ideas using proven demand criteria — avoid platform risk, chase boring businesses, and validate established markets."
 ---
 
 # SaaS Idea Validator
