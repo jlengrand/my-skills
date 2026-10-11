@@ -1,0 +1,32 @@
+{
+  "name": "spinoff-idea",
+  "version": "1.0.0",
+  "description": "Take an already-researched business idea from the Obsidian vault, find a market gap or sharper angle that would work much better, and document that spinoff in the ideas_spinoff folder.",
+  "icon": "git-branch",
+  "color": "F59E0B",
+  "triggers": [
+    "spin off an idea",
+    "spinoff idea",
+    "find a better angle",
+    "find a market gap",
+    "/spinoff-idea"
+  ],
+  "dependencies": {},
+  "auth": {
+    "required": false,
+    "type": null,
+    "keys": []
+  },
+  "install": {
+    "user": {
+      "claude": "npx skills add jlengrand/my-skills --skill spinoff-idea -a claude"
+    },
+    "project": {
+      "claude": "npx skills add jlengrand/my-skills --skill spinoff-idea"
+    }
+  },
+  "commands": [],
+  "links": {
+    "github": "https://github.com/jlengrand/my-skills/tree/main/skills/spinoff-idea"
+  }
+}

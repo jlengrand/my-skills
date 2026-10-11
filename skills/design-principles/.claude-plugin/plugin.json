@@ -1,0 +1,33 @@
+{
+  "name": "design-principles",
+  "version": "1.0.0",
+  "description": "Enforce a precise, minimal design system inspired by Linear, Notion, and Stripe. Use this skill when building dashboards, admin interfaces, or any UI that needs Jony Ive-level precision - clean, modern, minimalist with taste.",
+  "icon": "palette",
+  "color": "EC4899",
+  "triggers": [
+    "design principles",
+    "design system",
+    "UI design",
+    "dashboard design",
+    "admin interface",
+    "minimalist design"
+  ],
+  "dependencies": {},
+  "auth": {
+    "required": false,
+    "type": null,
+    "keys": []
+  },
+  "install": {
+    "user": {
+      "claude": "npx skills add jlengrand/my-skills --skill design-principles -a claude"
+    },
+    "project": {
+      "claude": "npx skills add jlengrand/my-skills --skill design-principles"
+    }
+  },
+  "commands": [],
+  "links": {
+    "github": "https://github.com/jlengrand/my-skills/tree/main/skills/design-principles"
+  }
+}

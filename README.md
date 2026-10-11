@@ -36,6 +36,9 @@ For more on the standard, see [agentskills.io](https://agentskills.io).
 | [saas-launch-playbook](./skills/saas-launch-playbook) | SaaS launch strategist — a 10-step playbook from idea validation through LTD strategy, content, AppSumo, and MRR stabilization (from Mike on Starter Story). |
 | [video-to-skills](./skills/video-to-skills) | Skill extractor — analyzes a video transcript and creates reusable Claude Code skill files from the teachable frameworks it contains. |
 | [personal-okr](./skills/personal-okr) | Personal OKR coach — drafts and reviews yearly Objectives and Key Results so they're outcome-driven, SMART, and grounded in real day-to-day work. |
+| [design-principles](./skills/design-principles) | Design system coach — enforces precise, minimal design inspired by Linear, Notion, and Stripe for dashboards, admin interfaces, and any UI needing Jony Ive-level precision. |
+| [research-idea](./skills/research-idea) | Business idea researcher — researches unfilled ideas in Obsidian vault, completing notes with description, competitors, tags, pricing model, ranking, and sources. |
+| [spinoff-idea](./skills/spinoff-idea) | Spinoff generator — takes researched ideas, finds market gaps or better angles, and documents spinoffs in a separate folder linked to originals. |
 
 ---
 
@@ -59,6 +62,9 @@ For more on the standard, see [agentskills.io](https://agentskills.io).
 /plugin install saas-launch-playbook@julien-skills
 /plugin install video-to-skills@julien-skills
 /plugin install personal-okr@julien-skills
+/plugin install design-principles@julien-skills
+/plugin install research-idea@julien-skills
+/plugin install spinoff-idea@julien-skills
 ```
 
 ### Universal install (npx)
@@ -79,6 +85,9 @@ npx skills add jlengrand/my-skills --skill saas-app-launch-marketing
 npx skills add jlengrand/my-skills --skill saas-launch-playbook
 npx skills add jlengrand/my-skills --skill video-to-skills
 npx skills add jlengrand/my-skills --skill personal-okr
+npx skills add jlengrand/my-skills --skill design-principles
+npx skills add jlengrand/my-skills --skill research-idea
+npx skills add jlengrand/my-skills --skill spinoff-idea
 ```
 
 ---
@@ -117,6 +126,15 @@ skills/
   video-to-skills/
     SKILL.md
   personal-okr/
+    .claude-plugin/plugin.json
+    SKILL.md
+  design-principles/
+    .claude-plugin/plugin.json
+    SKILL.md
+  research-idea/
+    .claude-plugin/plugin.json
+    SKILL.md
+  spinoff-idea/
     .claude-plugin/plugin.json
     SKILL.md
 .claude-plugin/
