@@ -1,0 +1,31 @@
+{
+  "name": "research-idea",
+  "version": "1.0.0",
+  "description": "Research the next unfilled business idea in the Obsidian vault and complete its note with description, competitors, tags, pricing model, ranking, and sources.",
+  "icon": "search",
+  "color": "8B5CF6",
+  "triggers": [
+    "research idea",
+    "research my next idea",
+    "fill in the next idea",
+    "/research-idea"
+  ],
+  "dependencies": {},
+  "auth": {
+    "required": false,
+    "type": null,
+    "keys": []
+  },
+  "install": {
+    "user": {
+      "claude": "npx skills add jlengrand/my-skills --skill research-idea -a claude"
+    },
+    "project": {
+      "claude": "npx skills add jlengrand/my-skills --skill research-idea"
+    }
+  },
+  "commands": [],
+  "links": {
+    "github": "https://github.com/jlengrand/my-skills/tree/main/skills/research-idea"
+  }
+}
